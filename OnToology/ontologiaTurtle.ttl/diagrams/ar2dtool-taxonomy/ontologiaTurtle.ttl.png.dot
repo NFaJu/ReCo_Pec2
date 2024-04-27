@@ -1,0 +1,24 @@
+digraph ar2dtool_diagram { 
+rankdir=LR;
+size="1000"
+node [shape = rectangle, color="black"]; "base:Airplane_flight_review" "base:Wide-body" "base:Economy_class" "base:Cargo" "base:Flight" "base:Commuter" "base:Regional" "base:State" "base:Planes" "base:Reviw" "base:Flight_company" "base:Passenger" "base:Intercontinental" "base:Airliners" "base:Company" "base:Continental" "base:Non-comercial_Planes" "base:Narrow-body" "base:Premium_economy" "base:Bussines_class" "base:Commercial" "base:Manufacturer" "base:First_class" ; /*classes style*/
+	"base:Non-comercial_Planes" -> "base:Planes" [ label = "rdfs:subClassOf" ];
+	"base:Airliners" -> "base:Planes" [ label = "rdfs:subClassOf" ];
+	"base:First_class" -> "base:Passenger" [ label = "rdfs:subClassOf" ];
+	"base:Commuter" -> "base:Airliners" [ label = "rdfs:subClassOf" ];
+	"base:Manufacturer" -> "base:Company" [ label = "rdfs:subClassOf" ];
+	"base:Regional" -> "base:Airliners" [ label = "rdfs:subClassOf" ];
+	"base:Economy_class" -> "base:Passenger" [ label = "rdfs:subClassOf" ];
+	"base:Bussines_class" -> "base:Passenger" [ label = "rdfs:subClassOf" ];
+	"base:Flight_company" -> "base:Company" [ label = "rdfs:subClassOf" ];
+	"base:Continental" -> "base:Flight" [ label = "rdfs:subClassOf" ];
+	"base:Intercontinental" -> "base:Flight" [ label = "rdfs:subClassOf" ];
+	"base:State" -> "base:Flight" [ label = "rdfs:subClassOf" ];
+	"base:Wide-body" -> "base:Airliners" [ label = "rdfs:subClassOf" ];
+	"base:Premium_economy" -> "base:Passenger" [ label = "rdfs:subClassOf" ];
+	"base:Narrow-body" -> "base:Airliners" [ label = "rdfs:subClassOf" ];
+	"base:Cargo" -> "base:Flight_company" [ label = "rdfs:subClassOf" ];
+	"base:Airplane_flight_review" -> "base:Reviw" [ label = "rdfs:subClassOf" ];
+	"base:Commercial" -> "base:Flight_company" [ label = "rdfs:subClassOf" ];
+
+}
